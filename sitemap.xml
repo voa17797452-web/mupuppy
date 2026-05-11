@@ -4,5 +4,36 @@
     <loc>https://voa17797452-web.github.io/mupuppy/</loc>
     <lastmod>2026-05-11</lastmod>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://voa17797452-web.github.io/mupuppy/posts/download-guide.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://voa17797452-web.github.io/mupuppy/posts/beginner-guide.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://voa17797452-web.github.io/mupuppy/posts/feeding-care.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://voa17797452-web.github.io/mupuppy/posts/gameplay-tips.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://voa17797452-web.github.io/mupuppy/posts/faq.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
