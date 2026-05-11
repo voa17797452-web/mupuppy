@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yixiangweilai.github.io/mupuppy/sitemap.xml
+Sitemap: https://voa17797452-web.github.io/mupuppy/sitemap.xml
