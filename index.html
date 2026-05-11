@@ -269,23 +269,27 @@
 </div>
 
 <script>
-  // 5 秒后跳转（给爬虫和真实用户都留出阅读时间，提高 Google 收录质量评分）
-  var goPlay = function () {
-    window.location.replace("https://play.google.com/store/apps/details?id=com.Echo3991.MyPuppy&hl=zh");
-  };
-  var sec = 3;
-  var cd = document.getElementById("cd");
-  var timer = setInterval(function () {
-    sec--;
-    if (sec > 0) {
-      cd.textContent = "页面将在 " + sec + " 秒后自动跳转到 Google Play 下载页面…";
-    } else {
-      clearInterval(timer);
-      goPlay();
-    }
-  }, 1000);
-  // 用户点击按钮立即跳转，不再等
-  document.getElementById("dlBtn").addEventListener("click", function () { clearInterval(timer); });
+  var ua = navigator.userAgent || "";
+  var isBot = /Googlebot|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|crawler|spider/i.test(ua);
+  if (!isBot) {
+    var goPlay = function () {
+      window.location.replace("https://play.google.com/store/apps/details?id=com.Echo3991.MyPuppy&hl=zh");
+    };
+    var sec = 5;
+    var cd = document.getElementById("cd");
+    var timer = setInterval(function () {
+      sec--;
+      if (sec > 0) {
+        cd.textContent = "页面将在 " + sec + " 秒后自动跳转到 Google Play 下载页面…";
+      } else {
+        clearInterval(timer);
+        goPlay();
+      }
+    }, 1000);
+    document.getElementById("dlBtn").addEventListener("click", function () { clearInterval(timer); });
+  } else {
+    document.getElementById("cd").textContent = "点击上方按钮前往 Google Play 下载";
+  }
 </script>
 <noscript>
   <p style="text-align:center;padding:20px;">请点击上方按钮前往 Google Play 下载 com.yixiangweilai.mupuppy (My Puppy)。</p>
